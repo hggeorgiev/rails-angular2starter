@@ -15,6 +15,10 @@ module Starterapp
         resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
+
+      config.assets.paths << Rails.root.join('node_modules')
+    config.assets.enabled = true
+
     config.active_record.raise_in_transactional_callbacks = true
 
 
