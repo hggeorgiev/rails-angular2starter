@@ -1,0 +1,37 @@
+<html>
+<head>
+    <!-- 1. Load libraries -->
+    <script src="/assets/intl/dist/Intl.js"></script>
+    <script src="/assets/intl/locale-data/jsonp/en.js"></script>
+
+    <script src="/assets/es6-shim/es6-shim.min.js"></script>
+    <script src="/assets/systemjs/dist/system-polyfills.js"></script>
+
+    <script src="/assets/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="/assets/systemjs/dist/system.src.js"></script>
+    <script src="/assets/rxjs/bundles/Rx.js"></script>
+    <script src="/assets/angular2/bundles/angular2.dev.js"></script>
+    <script src="/assets/angular2/bundles/http.dev.js"></script>
+    <script src="/assets/angular2/bundles/router.dev.js"></script>
+</head>
+<body>
+<script>
+    System.config({
+        map: {
+            'app': '/app',
+        },
+        packages: {
+            'app': {
+                format: 'register',
+                defaultExtension: 'js'
+            }
+        }
+    });
+    // and to finish, let's boot the app!
+    System.import('app/boot');
+</script>
+
+<base href="/">
+<app-router></app-router>
+</body>
+</html>
