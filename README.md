@@ -1,28 +1,13 @@
-== README
+# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Boilerplate for starting your Angular 2 app with Ruby on Rails 5 API back-end.
+The root of the Angular 2 application is located in:
+```bash
+  public/app
+```
+## Requirements
+ Ruby 2.2.4^
+ Node 4.2.0
+## Installation
+ 1. Run `bundle install`
+ 2. Run `npm install`
